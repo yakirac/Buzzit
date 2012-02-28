@@ -1,0 +1,426 @@
+<!-- Start of first page -->
+<div data-role="page" id="mainpage">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+		
+		<form role="search" class="ui-listview-filter ui-bar-c">
+				<input type="text" onkeyup="onmaintxtchange(this)" placeholder="Search" data-type="search" id="bsearch">
+		</form>
+
+		<a href="#mybuzz" data-role="button" data-inline="true" style="float: left;" data-transition="slide" data-back="false">Adv Settings</a>
+		<a href="#advsettings" data-role="button" data-inline="true" style="float: right;" data-transition="slide" data-back="false">My Buzz</a>
+		<br /><br /><br />
+
+		<div data-role="controlgroup">
+			<a href="#thebuzz" class="tobuzzlist" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">The Buzz</a>
+			<a href="#events" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">Events</a>
+			<a href="#buzzmart" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">Buzz Mart</a>
+			<a href="#sports" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">Sports</a>
+			<a href="#buzzniz" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">Buzzniz</a>
+		</div>
+
+		<div id="mainbuzzlist" data-role="collapsible-set">
+						
+		
+		</div>
+
+
+	</div><!-- /content -->
+
+	<!--<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>--><!-- /footer -->
+</div> <!-- /page -->
+
+<!-- Start of mybuzz page -->
+<div data-role="page" id="mybuzz">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+
+		<p>Advanced Settings</p>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<!-- Start of advanced settings page -->
+<div data-role="page" id="advsettings">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+		
+		<form role="search" class="ui-listview-filter ui-bar-c">
+				<input type="text" name="bsearch" id="bsearch" value="" onkeyup="ontxtchange(this);" placeholder="Search" data-type="search">
+		</form>
+						
+		<p>My Buzz</p>
+		<a href="#" onclick="gotomap( 'nearbuzz' )" data-role="button" data-transition="slide" data-back="false">Show Buzzes near you</a>
+
+		<br /><br />
+
+		<div data-role="controlgroup">
+        	<a href="#bsearchresults" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">View Search Results</a>
+			<a href="#favorites" class="tobuzzlist" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">Favorites</a>
+            <a href="#blank" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">Watch List</a>
+			<a href="#blank" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">Messages</a>
+			<a href="#blank" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">Friends</a>
+		</div>
+
+	</div><!-- /content -->
+
+</div><!-- /page --> 
+
+<!-- Start of buzz search results page -->
+<div data-role="page" id="bsearchresults">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+		
+		<p> Buzz search results</p> 
+		<div id="buzzlistresults" data-role="collapsible-set">
+		
+	
+
+		</div>
+	
+		
+		
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<!-- Start of the buzz page -->
+<div data-role="page" id="thebuzz">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+
+		<p style="text-align: center;">The Buzz<p>
+
+		<!--<p id="thebuzzdesc">Report on what's happening around you #taglocation</p>-->
+		<div data-role="fieldcontain" style="margin: 0 auto 0 auto;">
+			<!--<label for="textarea">Textarea:</label>-->
+			<textarea cols="30" rows="8" name="textarea" id="textarea" placeholder="Report on what's happening around you #taglocation" style="margin: 0 auto 0 auto;"></textarea>
+		</div>
+
+		<a href="#" onclick="gotomap( 'thebuzz' )" class="link" data-inline="true" style="text-align: left;" data-transition="slide" data-back="false">Add your location</a> 
+		&nbsp;|&nbsp;
+		<a href="#find_place" data-inline="true" style="text-align:left;" class="link" data-rel="dialog" data-transition="slidedown">Add GT place</a>
+
+<!--		<br /><br /><br />-->
+
+
+		<a href="#" onclick="buzzit()" data-role="button" data-inline="true" style="float: right;" data-transition="slide" data-back="false">Buzz!</a>
+
+		<br /><br /><br />
+
+		<a href="#" onclick="gotomap( 'nearbuzz' )" data-role="button" data-transition="slide" data-back="false">Show Buzzes near you</a>
+
+		<br /><br />
+
+
+		<form role="search" class="ui-listview-filter ui-bar-c">
+			<input type="text name="bsearch" id="bsearch" onkeyup="onbuzztxtchange(this)" placeholder="Search Buzzits..." data-type="search">
+		</form>
+
+		<div id="buzzlist" data-role="collapsible-set">
+				<!--<div data-role="collapsible" data-collapsed="true">
+					<h3>Test</h3>
+					<p>Test paragraph</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>Test2</h3>
+					<p>Test paragraph2</p>
+				</div>-->
+		</div>
+	
+		<!--<div data-role="fieldcontain">
+			<label for="textarea">Textarea:</label>
+			<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+		</div>-->
+
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<!-- Start of events page -->
+<div data-role="page" id="events">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+
+		<p>Buzz your events! - Coming Soon</p>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<!-- Start of buzzmart page -->
+<div data-role="page" id="buzzmart">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+
+		<p>Buy and Swap! - Coming Soon</p>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<!-- Start of sports page -->
+<div data-role="page" id="sports">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+
+		<p>Yellow Jacket Buzz! - Coming Soon</p>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<!-- Start of buzzniz page -->
+<div data-role="page" id="buzzniz">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+
+		<p>Buzzniz for business - Coming Soon</p>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<!-- Start of events page -->
+<div data-role="page" id="blank">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+
+		<p>Coming Soon</p>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<!-- Start of map page -->
+<div data-role="page" id="map_page">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+
+		<div id="map_canvas" style="height: 100%; width: 100%;">
+		</div>
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<!-- Start of Find Place dialog box -->
+<div data-role="page" id="find_place">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+		<ul data-role="listview" id="placelist">
+			<!--<li><a href="#">item1</a></li>
+			<li><a href="#">item2</a></li>
+			<li><a href="#">item3</a></li>-->
+		</ul>
+	</div><!-- /content -->
+
+</div><!-- /page --> 
+
+<!-- Start of Match Location dialog box -->
+<div data-role="page" id="match_loc">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+		<ul data-role="listview" id="loclist">
+			<!--<li><a href="#">item1</a></li>
+			<li><a href="#">item2</a></li>
+			<li><a href="#">item3</a></li>-->
+		</ul>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+
+<!-- Start of individual buzz with comments page -->
+<div data-role="page" id="buzz_page">
+
+		<div class="header_space"></div>
+
+		<div data-role="content" id="buzzpand">
+			<div id="fullbuzz"></div>
+		 <!-- <div data-role="controlgroup">-->
+			 <a href="#comments" id="viewbtn" class="" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">View Comments</a>
+		<!-- </div> -->
+	</div><!-- /content -->
+
+</div><!-- /page --> 
+
+<!-- Start of comments page -->
+<div data-role="page" id="comments">
+	<div class="header_space"></div>
+
+	<div data-role="content">
+<!--	<div data-role="fieldcontain" id="commentuser"> </div>	-->
+		<h3>Comments</h3>
+<!--	 	<div data-role="fieldcontain" style="margin: 0 auto 0 auto;">-->
+	 		<textarea cols="30" rows="8" name="commentarea" id="commentarea" placeholder="Leave a comment" style="margin: 0 auto 0 auto;"></textarea>
+			<a id="postbtn" data-role="button" data-inline="true" style="float: right;" data-transition="slide" data-back="false">Post</a>	
+			<br />
+<!--		</div>-->
+			<br />
+			<div id="commentlist" data-role="collapsible-set"></div>
+	</div>
+	
+</div><!-- /comments page -->  
+
+<!-- SHU_ADD -->
+
+
+<!-- Start of Settings page -->
+
+<div data-role="page" id="settings">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+
+
+<!--
+<img src="http://www.showbizgossips.com/wp-content/uploads/2010/11/johnny-depp-pirates1.jpg" width=50 height=50>
+
+
+	<div id="settings_name"></div>
+	<div class="status_display" id="status_display"></div>
+	<script>
+		window.onload = function(){
+		    $("#settings_name").append(PORTAL_CLIENT.getName());
+		}
+
+		$(document).keypress(function(e){
+			if(e.keyCode == 13)
+			{
+				$(".status_display").text("");
+			
+
+		
+				$(".status_display").append($(".status_update").val());
+
+			}
+
+		});
+
+
+	</script>
+
+	<textarea cols="6" rows="1" name="status" class="status_update" id="status_update" placeholder="How are you feeling right now?" style="margin: 0 auto 0 auto;"></textarea>
+-->
+
+
+
+		<div data-role="controlgroup">
+			<a href="#favorites" class="tobuzzlist" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">Favorites</a>
+			<a href="#watch_list" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">Watch List</a>
+			<a href="#messages" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">Messages</a>
+			<a href="#follow" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">Follow</a>
+			<a href="#edit_profile" data-role="button" data-icon="arrow-r" data-iconpos="right" data-transition="slide" data-back="false">Edit Profile</a>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+<!-- Start of Favorites page -->
+
+	
+<div data-role="page" id="favorites">
+<div class="header_space"></div>
+<div data-role="content">
+
+<!--
+	<img src="http://www.showbizgossips.com/wp-content/uploads/2010/11/johnny-depp-pirates1.jpg" width=50 height=50>
+
+	<div class="settings" id="favorites_name"></div>
+	<div class="status_display" id="status_display"></div>
+
+	<script>
+		window.onload = function(){
+		    $("#favorites_name").append(PORTAL_CLIENT.getName());
+		}
+
+		$(document).keypress(function(e){
+			if(e.keyCode == 13)
+			{
+				$(".status_display").text("");
+				
+
+			
+				$(".status_display").append($(".status_update").val());
+
+			}
+
+		});
+
+	</script>
+
+	<textarea cols="6" rows="1" name="status" class="status_update" id="status_update" placeholder="How are you feeling right now?" style="margin: 0 auto 0 auto;"></textarea>
+-->
+	<p>Favorites</p>
+
+	<div id="favorites_list" data-role="collapsible-set"></div>
+
+<!--
+	<script>
+		$(document).ready(function(){
+			$("#fav_accr").accordion( { active: false, collapsible: true} );
+		});
+	</script>
+
+	<div id="fav_accr">
+		<div>
+		</div>
+		<div>
+		</div>
+		<div>
+		</div>
+
+
+
+	</div>
+-->
+
+
+</div>
+</div>
+
+

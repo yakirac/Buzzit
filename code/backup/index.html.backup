@@ -1,0 +1,87 @@
+<div id="homeScreen">
+	<div id="searchContainer">
+		<div id="searchTxtWrapper">
+			<input type="text" name="search" value id="search" onkeyup="ontxtchange();" placeholder="Search...">
+		</div>
+	</div>
+
+	<div id="linkrow">
+		<a href="javascript:placeholder()" style="float: left;">MyBuzz</a>
+		<a href="javascript:placeholder()" style="float: right;">Advanced Search</a>
+	</div>
+
+	<div id="homeList">
+		<div class="homeItem" onclick="show_thebuzz()">
+			<div class="homeName">The Buzz</div>
+			<div class="placeDistance">&nbsp;</div>
+			<div class="homeLinkButton">&nbsp;</div>
+		</div>
+
+		<div class="homeItem" onclick="placeholder()">
+			<div class="homeName">Events</div>
+			<div class="placeDistance">&nbsp;</div>
+			<div class="homeLinkButton">&nbsp;</div>
+	</div>
+
+		<div class="homeItem" onclick="placeholder()">
+			<div class="homeName">Buzz-Mart</div>
+			<div class="placeDistance">&nbsp;</div>
+			<div class="homeLinkButton">&nbsp;</div>
+		</div>
+
+		<div class="homeItem" onclick="placeholder()">
+			<div class="homeName">Sports</div>
+			<div class="placeDistance">&nbsp;</div>
+			<div class="homeLinkButton">&nbsp;</div>
+		</div>
+
+		<div class="homeItem" id="Buzzniz" onclick="placeholder()">
+			<div class="homeName">Buzzniz</div>
+			<div class="placeDistance">&nbsp;</div>
+			<div class="homeLinkButton">&nbsp;</div>		
+		</div>
+	</div>
+
+</div>
+
+
+<div id="content">
+</div>
+
+
+
+
+
+
+<!--<div id="content">
+	Buzzit! <br />
+	<div id="idtest"></div>
+	<a class="ui-button ui-gray ui-button-medium">BUTTON!</a> <br /> 
+<br />
+	<a class="ui-button ui-gold ui-button-medium">Gold button</a> <br />
+</div>-->
+
+
+<!--<div id="eventform">
+	<form name="addbuzz">
+	Add Buzz:<br />
+	Title: <input type="text" name="title" /><br />
+	Location: <input type="text" name="location" /><br />
+	Start Time: <input type="text" name="start_time" 
+value="2011-01-30 12:00:00" /><br />
+	End Time: <input type="text" name="end_time" value="2011-01-30 
+17:20:05" /><br />
+	Details: <textarea name="details" rows="10" 
+cols="30"></textarea><br />
+	<a href="javascript:submit_buzz()" class="ui-button 
+ui-gold ui-button-medium">Submit Buzz</a><br /><br />
+</div>
+
+<div id="showbuzzes">
+	<a href="javascript:show_buzzes()" class="ui-button ui-gray 
+ui-button-medium">Show Buzzes</a><br /><br />
+
+	<div id="buzzlist">
+	</div>
+
+</div>-->

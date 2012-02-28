@@ -1,0 +1,20 @@
+.header_space {
+	height: 43px
+}
+
+body {
+	background-color: white;
+}
+
+#thebuzzdesc {
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-align: center;
+	/*line-height: 4em;*/
+	border: 1px solid black;
+	margin: 0 auto 0 auto;
+}
+
+/*ui-icon-loading{background-image:url(http://m.cip.gatech.edu/~buzzit/base_widget/images/ajax-loader.png);width:40px;height:40px;-moz-border-radius:20px;-webkit-border-radius:20px;border-radius:20px;background-size:35px 35px}*/
+
+.ui-icon-loading{background-image:url(http://m.cip.gatech.edu/css/images/ajax-loader.png);

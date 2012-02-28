@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding = "utf-8" ?>
+<widget title="Buzzit!">
+	<icon>icon.png</icon>
+	<!--<css>root/css/ui-lightness/jquery-ui-1.8.2.custom.css</css>-->
+	<!--<css>include/uistyles.css</css>-->
+	<css>root/css/jquery.mobile-1.0a2.min.css</css>
+	<!--<css>uname/style_jqm.css</css>-->
+
+	<javascript>root/js/jquery-1.4.4.min.js</javascript>
+	<javascript>root/js/jquery.mobile-1.0a2.min.js</javascript>
+	<doctype></doctype>
+	<!--<javascript>uname/scripts/jquery.json-2.2.js</javascript>-->
+	
+	<javascript>uname/scripts/buzzit_jqm2.js</javascript>
+	<css>uname/style_jqm.css</css>
+
+	<!--<javascript>http://maps.google.com/maps/api/js?sensor=false&amp;v=3&amp;key=ABQIAAAAwumF5mYebULjg1nvFjk7sxTwM0brOpm-All5BF6PoaKBxRWWERSqzFXrQ2KfaAgQfMq5YWKjUiIhGQ</javascript>-->
+	<html>index.html</html>
+</widget>

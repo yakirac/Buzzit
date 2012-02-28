@@ -1,0 +1,34 @@
+<!-- Start of first page -->
+<div data-role="page" id="foo">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+		<p>I'm first in the source order so I'm shown as the page.</p>
+		<p>View internal page called <a href="#bar" id="to_bar" data-transition="slide" data-back="false">bar</a></p>
+	</div><!-- /content -->
+
+	<!--<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>--><!-- /footer -->
+</div> <!-- /page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="bar">
+
+	<div class="header_space"></div>
+
+	<div data-role="content">
+
+		<script type="text/javascript">
+			nologolink();
+		</script>
+
+		<p>I'm second in the source order so I'm shown as the page.</p>
+		<p><a href="#foo" id="to_foo" data-transition="slide" data-back="true">Back to foo</a></p>
+	</div><!-- /content -->
+
+	<!--<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>--><!-- /footer -->
+</div><!-- /page -->
